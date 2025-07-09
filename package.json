@@ -1,0 +1,44 @@
+{
+  "name": "helloworld",
+  "displayName": "HelloWorld",
+  "description": "LEAVE BLANK",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "engines": {
+    "vscode": "^1.60.0" 
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:vue"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "helloworld.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "build": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.101.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "tsdown": "^0.12.9",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+  }
+}
