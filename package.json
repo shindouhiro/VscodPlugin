@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "type": "commonjs",
   "engines": {
-    "vscode": "^1.60.0" 
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Other"
@@ -25,6 +25,7 @@
   },
   "scripts": {
     "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
     "build": "tsc -p ./"
   },
   "devDependencies": {
@@ -40,5 +41,6 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "sharp": "^0.34.2"
   }
 }
